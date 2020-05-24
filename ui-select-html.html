@@ -1,6 +1,14 @@
-<ui-select multiple ng-model='formData.topics_selected' theme="bootstrap" style="width: 800px; margin-right: 10px;" title="Select topic" remove-selected="false" close-on-select="false">
+<html ng-app="main" ng-controller='mainController'>
+    
+
+    <body>
+    
+        <ui-select multiple ng-model='formData.topics_selected' theme="bootstrap" style="width: 800px; margin-right: 10px;" title="Select topic" remove-selected="false" close-on-select="false">
                                         <ui-select-match placeholder="Enter topic name to search">{{$item.topic_name}}</ui-select-match>
-                                        <ui-select-choices group-by="'parent_topic_name'" repeat="topic.id as topic in topics | propsFilter: {topic_name:$select.search} ">
+                                        <ui-select-choices group-by="'parent_topic_name'" repeat="topic.id as topic in topics | filter: {topic_name:$select.search} ">
                                             <div ng-bind-html="topic.topic_name | highlight: $select.search"></div>
                                         </ui-select-choices>
-                                </ui-select>
+        </ui-select>
+    
+    </body>
+</html>
