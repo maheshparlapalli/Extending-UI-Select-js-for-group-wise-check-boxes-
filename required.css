@@ -1,0 +1,52 @@
+.ui-select-choices-group .ui-select-choices-row-inner div:before{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    content: "\e157";
+    margin-right:5px;
+}
+
+.ui-select-choices-group .disabled .ui-select-choices-row-inner div:before{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    content: "\e067";
+    margin-right:5px;
+}
+
+.ui-select-choices-group .ui-select-choices-group-label.dropdown-header:before {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    content: "\e157";
+    margin-right:5px;
+}
+
+.ui-select-choices-group .ui-select-choices-group-label.dropdown-header.all-selected:before {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    content: "\e067";
+    margin-right:5px;
+}
+
+.ui-select-bootstrap .ui-select-choices-row.disabled > span, 
+.ui-select-bootstrap .ui-select-choices-row.active.disabled > span {
+    cursor: pointer;
+}
