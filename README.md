@@ -1,1 +1,1 @@
-# Extending-UI-Select-js-for-group-wise-check-boxes-
+# Modifying UI-Select-js-for-group-wise-check-boxes-
